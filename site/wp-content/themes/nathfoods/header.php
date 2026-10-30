@@ -10,10 +10,6 @@
 <?php wp_body_open(); ?>
 <a class="nf-skip" href="#main"><?php esc_html_e( 'Zum Inhalt springen', 'nathfoods' ); ?></a>
 
-<div class="nf-topbar">
-	<?php esc_html_e( 'Kostenloser Versand in ganz Deutschland ab 49 €', 'nathfoods' ); ?>
-</div>
-
 <header class="nf-header" id="nf-header">
 	<div class="nf-wrap nf-header__row">
 		<button class="nf-iconbtn nf-menu-toggle" type="button" aria-expanded="false" aria-controls="nf-drawer" aria-label="<?php esc_attr_e( 'Menü öffnen', 'nathfoods' ); ?>"><?php echo nf_icon( 'menu', 22 ); // phpcs:ignore ?></button>
@@ -33,6 +29,11 @@
 					</div>
 				</li>
 				<li><a href="<?php echo esc_url( home_url( '/#angebote' ) ); ?>"><?php esc_html_e( 'Angebote', 'nathfoods' ); ?></a></li>
+				<li><a href="<?php echo esc_url( add_query_arg( 'orderby', 'date', nf_page_url( 'shop' ) ) ); ?>"><?php esc_html_e( 'Neuheiten', 'nathfoods' ); ?></a></li>
+				<?php $nf_delivery = get_page_by_path( 'versandarten' ); ?>
+				<?php if ( $nf_delivery ) : ?>
+					<li><a href="<?php echo esc_url( get_permalink( $nf_delivery ) ); ?>"<?php echo is_page( $nf_delivery->ID ) ? ' aria-current="page"' : ''; ?>><?php esc_html_e( 'Lieferung', 'nathfoods' ); ?></a></li>
+				<?php endif; ?>
 			</ul>
 		</nav>
 
@@ -46,7 +47,7 @@
 		<div class="nf-actions">
 			<?php nf_language_switcher(); ?>
 			<a class="nf-action" href="<?php echo esc_url( nf_page_url( 'myaccount' ) ); ?>"><?php echo nf_icon( 'user' ); // phpcs:ignore ?><span><?php esc_html_e( 'Konto', 'nathfoods' ); ?></span></a>
-			<a class="nf-action nf-cart" href="<?php echo esc_url( nf_page_url( 'cart' ) ); ?>"><?php echo nf_icon( 'cart' ); // phpcs:ignore ?><span><?php esc_html_e( 'Warenkorb', 'nathfoods' ); ?></span><?php echo nf_cart_count_html(); // phpcs:ignore ?></a>
+			<a class="nf-action nf-cart" href="<?php echo esc_url( nf_page_url( 'cart' ) ); ?>"><?php echo nf_icon( 'bag' ); // phpcs:ignore ?><span><?php esc_html_e( 'Warenkorb', 'nathfoods' ); ?></span><?php echo nf_cart_count_html(); // phpcs:ignore ?></a>
 		</div>
 	</div>
 </header>

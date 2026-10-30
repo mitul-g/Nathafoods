@@ -49,6 +49,13 @@ add_filter( 'woocommerce_add_to_cart_fragments', function ( $fragments ) {
 	return $fragments;
 } );
 
+// The shop banner carries the title, breadcrumb and description.
+add_filter( 'woocommerce_show_page_title', '__return_false' );
+add_action( 'init', function () {
+	remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
+	remove_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10 );
+} );
+
 // The header has its own DE / EN switch.
 add_filter( 'trp_floater_ls_html_v2', '__return_empty_string' );
 

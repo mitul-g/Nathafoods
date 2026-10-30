@@ -176,7 +176,10 @@ if ( class_exists( 'TRP_Translate_Press' ) ) {
 	$gettext->check_gettext_table( 'de_DE' );
 	$gettext->check_gettext_table( 'en_US' );
 	$table = $query->get_table_name( 'en_US', 'de_DE' );
+	// TranslatePress matches the HTML-encoded form, so names with & are stored that way.
 	foreach ( $dict as $original => $translated ) {
+		$original   = str_replace( '&', '&amp;', $original );
+		$translated = str_replace( '&', '&amp;', $translated );
 		$wpdb->insert( $table, [
 			'original'    => $original,
 			'translated'  => $translated,

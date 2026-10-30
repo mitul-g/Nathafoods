@@ -188,5 +188,11 @@ msgstr "Add %s to cart"
 msgid "inkl. MwSt., zzgl."
 msgstr "incl. VAT, plus"
 
+msgid "Neuheiten"
+msgstr "What's New"
+
+msgid "Lieferung"
+msgstr "Delivery"
+
 msgid "Versand"
 msgstr "shipping"

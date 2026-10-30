@@ -56,34 +56,36 @@ button { font: inherit; cursor: pointer; }
 .nf-iconbtn.is-accent { background: var(--lime-400); border-color: var(--lime-400); }
 
 /* Header */
-.nf-topbar { background: var(--green-900); color: #fff; font-size: 13px; text-align: center; padding: 6px 16px; }
+
 .nf-header { position: sticky; top: 0; z-index: 40; background: #fff; border-bottom: 1px solid transparent; transition: border-color .2s, box-shadow .2s; }
 .nf-header.is-stuck { border-color: var(--line); box-shadow: 0 4px 20px rgba(15, 77, 42, .06); }
-.nf-header__row { display: flex; align-items: center; gap: 16px; min-height: 72px; }
+.nf-header__row { display: flex; align-items: center; gap: 20px; min-height: 76px; }
 .nf-logo { display: inline-flex; align-items: center; font: 600 20px/1 var(--font-head); color: var(--green-900); text-decoration: none; }
-.nf-logo img { height: 56px; width: auto; }
-.nf-nav > ul { display: flex; gap: 4px; }
-.nf-nav a { display: inline-flex; align-items: center; gap: 4px; padding: 10px 14px; border-radius: 999px; color: var(--ink); text-decoration: none; font-weight: 500; font-size: 15px; }
-.nf-nav a:hover { background: var(--mint-50); }
+.nf-logo img { height: 52px; width: auto; }
+.nf-nav > ul { display: flex; gap: 2px; }
+.nf-nav a { display: inline-flex; align-items: center; gap: 4px; padding: 10px; color: var(--ink); text-decoration: none; font-weight: 500; font-size: 14px; transition: color .15s; }
+.nf-nav a:hover { color: var(--green-700); }
 .nf-nav a[aria-current="page"] { color: var(--green-700); font-weight: 600; }
 .nf-has-mega { position: relative; }
 .nf-mega { position: absolute; left: 0; top: 100%; min-width: 280px; padding: 8px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 16px 40px rgba(15, 77, 42, .12); opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .18s, transform .18s var(--ease), visibility .18s; }
 .nf-has-mega:hover .nf-mega, .nf-has-mega:focus-within .nf-mega { opacity: 1; visibility: visible; transform: none; }
 .nf-mega a { display: block; border-radius: 10px; }
-.nf-search { flex: 1; display: flex; align-items: center; max-width: 420px; margin-inline: auto; background: var(--mint-50); border-radius: 999px; padding-inline: 16px 4px; }
+.nf-mega a:hover { background: var(--mint-50); }
+.nf-search { flex: 1; display: flex; align-items: center; max-width: 400px; margin-left: auto; background: #f1f4fa; border-radius: 999px; padding-inline: 20px 6px; }
 .nf-search input[type="search"] { flex: 1; min-width: 0; min-height: 44px; border: 0; background: none; font: inherit; color: var(--ink); outline: none; }
 .nf-search:focus-within { box-shadow: 0 0 0 2px var(--green-600); }
 .nf-search button { display: inline-flex; width: 40px; height: 40px; align-items: center; justify-content: center; background: none; border: 0; color: var(--green-900); border-radius: 50%; }
-.nf-actions { display: flex; gap: 4px; }
-.nf-action { position: relative; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 12px; border-radius: 999px; color: var(--ink); text-decoration: none; font-size: 14px; font-weight: 500; }
-.nf-action:hover { background: var(--mint-50); }
-.nf-cart-count { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; padding-inline: 6px; border-radius: 999px; background: var(--green-700); color: #fff; font: 600 12px/1 var(--font-head); font-variant-numeric: tabular-nums; }
+.nf-actions { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+.nf-action { position: relative; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px; color: var(--ink); text-decoration: none; font-size: 14px; font-weight: 500; transition: color .15s; }
+.nf-action:hover { color: var(--green-700); }
+.nf-cart-count { position: absolute; top: 2px; left: 20px; display: inline-flex; align-items: center; justify-content: center; min-width: 17px; height: 17px; padding-inline: 4px; border-radius: 999px; background: var(--green-700); color: #fff; font: 600 10px/1 var(--font-head); font-variant-numeric: tabular-nums; }
+.nf-cart-count[data-count="0"] { display: none; }
 .nf-menu-toggle { display: none; border: 0; }
 
-.nf-lang { display: inline-flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; }
-.nf-lang a { display: inline-flex; min-width: 38px; min-height: 38px; align-items: center; justify-content: center; border-radius: 999px; color: var(--ink); font: 600 13px/1 var(--font-head); text-decoration: none; }
-.nf-lang a:hover { background: var(--mint-50); }
-.nf-lang a[aria-current] { background: var(--green-900); color: #fff; }
+.nf-lang { display: inline-flex; align-items: center; gap: 2px; }
+.nf-lang a { display: inline-flex; min-width: 34px; min-height: 44px; align-items: center; justify-content: center; color: var(--muted); font: 500 13px/1 var(--font-body); text-decoration: none; }
+.nf-lang a:hover { color: var(--green-700); }
+.nf-lang a[aria-current] { color: var(--green-700); font-weight: 600; }
 .nf-drawer__panel .nf-lang { margin-top: 16px; }
 .nf-drawer__panel .nf-lang a { padding: 0; border: 0; }
 
@@ -223,8 +225,22 @@ ul.products.nf-grid--row { grid-auto-flow: column; grid-template-columns: none; 
 .nf-newsletter button { flex: none; min-height: 40px; padding: 0 16px; border: 0; border-radius: 999px; background: #fff; color: var(--ink); font: 600 13px/1 var(--font-head); }
 .nf-footer__base { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 16px; border-top: 1px solid rgba(255, 255, 255, .18); font-size: 13px; }
 
+/* Shop listing banner */
+.nf-shop-banner { position: relative; display: grid; grid-template-columns: 1fr 260px; align-items: center; gap: 24px; min-height: 240px; margin-top: 16px; padding: 28px 40px; border-radius: var(--radius-lg); color: #fff; background: repeating-linear-gradient(90deg, rgba(255, 255, 255, .035) 0 2px, transparent 2px 56px), linear-gradient(120deg, var(--green-900), var(--green-700) 60%, var(--green-600)); overflow: hidden; }
+.nf-shop-banner h1 { margin: 0; font-size: clamp(26px, 3.4vw, 42px); color: #fff; }
+.nf-shop-banner p { max-width: 56ch; margin: 10px 0 0; color: #eaf5e9; }
+.nf-shop-banner .woocommerce-breadcrumb { margin-bottom: 10px; font-size: 13px; color: #d5ead6; }
+.nf-shop-banner .woocommerce-breadcrumb a { color: var(--lime-300); }
+.nf-shop-banner__art { position: relative; aspect-ratio: 1; width: 220px; justify-self: end; }
+.nf-shop-banner__disc { position: absolute; inset: 6%; border-radius: 50%; background: radial-gradient(circle at 35% 30%, var(--lime-300), var(--lime-400) 60%, #7fcb47); }
+.nf-shop-banner__art img { position: absolute; filter: drop-shadow(0 10px 14px rgba(0, 0, 0, .25)); }
+.nf-shop-banner__art .is-single { width: 74%; height: 74%; left: 13%; top: 13%; object-fit: contain; }
+.nf-shop-banner__art .a { width: 58%; left: 22%; top: 28%; }
+.nf-shop-banner__art .b { width: 50%; left: 0; top: 2%; }
+.nf-shop-banner__art .c { width: 40%; right: 0; top: 6%; }
+
 /* Plain pages and shop */
-.nf-content { padding-block: 40px 72px; }
+.nf-content { padding-block: 32px 72px; }
 .nf-content h1 { font-size: clamp(28px, 3.6vw, 44px); margin-bottom: 20px; }
 .nf-shop .woocommerce-result-count { margin: 0; color: var(--muted); font-size: 14px; }
 .nf-shop .woocommerce-ordering { margin: 0 0 20px; float: right; }
@@ -256,10 +272,12 @@ ul.products.nf-grid--row { grid-auto-flow: column; grid-template-columns: none; 
 }
 @media (max-width: 768px) {
 	.nf-header__row { flex-wrap: wrap; gap: 8px; padding-block: 8px; }
-	.nf-actions { margin-left: auto; }
 	.nf-actions .nf-lang { display: none; }
 	.nf-logo img { height: 44px; }
-	.nf-search { order: 5; flex-basis: 100%; max-width: none; }
+	.nf-shop-banner { grid-template-columns: 1fr 96px; gap: 12px; min-height: 0; padding: 20px; }
+	.nf-shop-banner__art { width: 96px; }
+	.nf-shop-banner p { font-size: 14px; }
+	.nf-search { order: 5; flex-basis: 100%; max-width: none; margin-left: 0; }
 	.nf-hero__inner { grid-template-columns: 1fr; padding-block: 40px 88px; }
 	.nf-hero__art { max-width: 320px; justify-self: center; }
 	.nf-trust { grid-template-columns: 1fr; gap: 0; }
