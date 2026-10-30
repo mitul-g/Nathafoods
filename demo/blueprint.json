@@ -1,16 +1,73 @@
 {
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
 	"landingPage": "/",
-	"preferredVersions": { "php": "8.3", "wp": "latest" },
-	"features": { "networking": true },
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
 	"steps": [
-		{ "step": "setSiteLanguage", "language": "de_DE" },
-		{ "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "woocommerce" }, "options": { "activate": true } },
-		{ "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "woocommerce-germanized" }, "options": { "activate": true } },
-		{ "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "translatepress-multilingual" }, "options": { "activate": true } },
-		{ "step": "installTheme", "themeData": { "resource": "url", "url": "https://raw.githubusercontent.com/mitul-g/Nathafoods/main/demo/nathfoods-theme.zip" }, "options": { "activate": true } },
-		{ "step": "writeFile", "path": "/wordpress/nf-seed.php", "data": { "resource": "url", "url": "https://raw.githubusercontent.com/mitul-g/Nathafoods/main/demo/seed.php" } },
-		{ "step": "runPHP", "code": "<?php require '/wordpress/wp-load.php'; require '/wordpress/nf-seed.php';" },
-		{ "step": "login", "username": "admin", "password": "password" }
+		{
+			"step": "setSiteLanguage",
+			"language": "de_DE"
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "woocommerce"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "woocommerce-germanized"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "translatepress-multilingual"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installTheme",
+			"themeData": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/mitul-g/Nathafoods/main/demo/nathfoods-theme.zip"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/nf-seed.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/mitul-g/Nathafoods/main/demo/seed.php"
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; require '/wordpress/nf-seed.php';"
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; wp_set_password( wp_generate_password( 40 ), 1 );"
+		}
 	]
 }
