@@ -68,6 +68,16 @@
 		{
 			"step": "runPHP",
 			"code": "<?php require '/wordpress/wp-load.php'; wp_set_password( wp_generate_password( 40 ), 1 );"
+		},
+		{
+			"step": "mkdir",
+			"path": "/wordpress/wp-content/mu-plugins"
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/mu-plugins/nf-demo-lock.php",
+			"data": "<?php\n// Demo lock: visitors are always logged out and cannot reach the admin or login screens.\nadd_filter( 'determine_current_user', '__return_zero', 9999 );\nadd_filter( 'show_admin_bar', '__return_false' );\nfunction nf_demo_go_home() {\n\tif ( ! wp_doing_ajax() ) {\n\t\twp_safe_redirect( home_url( '/' ) );\n\t\texit;\n\t}\n}\nadd_action( 'admin_init', 'nf_demo_go_home' );\nadd_action( 'login_init', 'nf_demo_go_home' );\n"
 		}
-	]
+	],
+	"login": false
 }
