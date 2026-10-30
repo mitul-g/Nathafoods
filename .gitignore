@@ -1,0 +1,14 @@
+# WordPress core, plugins and uploads are installed by setup, not tracked.
+/site/*
+!/site/wp-content/
+/site/wp-content/*
+!/site/wp-content/themes/
+/site/wp-content/themes/*
+!/site/wp-content/themes/nathfoods/
+
+# Local PHP, database and credentials.
+/dev-stack/
+
+# Third-party design mockups, kept locally for reference only.
+*.webp
+!/site/wp-content/themes/nathfoods/assets/img/**/*.webp

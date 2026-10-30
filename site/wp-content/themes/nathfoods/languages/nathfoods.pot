@@ -1,0 +1,282 @@
+# Copyright (C) 2026 
+# This file is distributed under the same license as the Nathfoods theme.
+msgid ""
+msgstr ""
+"Project-Id-Version: Nathfoods 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/nathfoods\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-30T09:58:31+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: nathfoods\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Nathfoods"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Custom WooCommerce grocery theme for Nathfoods."
+msgstr ""
+
+#: footer.php:7
+msgid "Indische Lebensmittel aus Leipzig, temperaturgeschützt in ganz Deutschland geliefert."
+msgstr ""
+
+#: footer.php:10
+msgid "Einkaufen"
+msgstr ""
+
+#: footer.php:18
+msgid "Rechtliches"
+msgstr ""
+
+#: footer.php:29
+msgid "Kontakt"
+msgstr ""
+
+#: footer.php:37
+msgid "Newsletter"
+msgstr ""
+
+#: footer.php:38
+msgid "Angebote und Rezepte per E-Mail. Abmeldung jederzeit möglich."
+msgstr ""
+
+#: footer.php:40
+#: footer.php:41
+msgid "E-Mail-Adresse"
+msgstr ""
+
+#: footer.php:42
+msgid "Anmelden"
+msgstr ""
+
+#: footer.php:48
+msgid "Zahlung per Stripe und PayPal"
+msgstr ""
+
+#: front-page.php:15
+msgid "Natha Foods Leipzig"
+msgstr ""
+
+#: front-page.php:16
+msgid "Authentische indische Lebensmittel, <em>schnell geliefert</em>"
+msgstr ""
+
+#: front-page.php:17
+msgid "Frisch gemahlenes Chakki-Mehl, regionale Masalas und frische Zutaten, temperaturgeschützt in ganz Deutschland geliefert."
+msgstr ""
+
+#: front-page.php:18
+msgid "Jetzt einkaufen"
+msgstr ""
+
+#: front-page.php:31
+msgid "Unsere Leistungen"
+msgstr ""
+
+#: front-page.php:32
+msgid "Versand am selben Tag"
+msgstr ""
+
+#: front-page.php:32
+msgid "bei Bestellung bis 12:00 Uhr"
+msgstr ""
+
+#: front-page.php:33
+msgid "Temperaturgeschützt"
+msgstr ""
+
+#: front-page.php:33
+msgid "Versand frischer Ware aus Leipzig"
+msgstr ""
+
+#: front-page.php:34
+msgid "Sichere Zahlung"
+msgstr ""
+
+#: front-page.php:34
+msgid "mit Karte oder PayPal"
+msgstr ""
+
+#: front-page.php:40
+msgid "Beliebte <em>Kategorien</em>"
+msgstr ""
+
+#: front-page.php:42
+#: front-page.php:83
+msgid "Zurück"
+msgstr ""
+
+#: front-page.php:43
+#: front-page.php:84
+msgid "Weiter"
+msgstr ""
+
+#: front-page.php:62
+msgid "Heute frisch <em>für dich</em>"
+msgstr ""
+
+#: front-page.php:63
+msgid "Alle ansehen"
+msgstr ""
+
+#: front-page.php:65
+msgid "Nach Kategorie filtern"
+msgstr ""
+
+#: front-page.php:66
+msgid "Alle"
+msgstr ""
+
+#: front-page.php:81
+msgid "Frische <em>Angebote</em>"
+msgstr ""
+
+#: front-page.php:102
+msgid "Warum bei <em>Natha Foods</em> einkaufen?"
+msgstr ""
+
+#: front-page.php:103
+msgid "Alles für die indische Küche an einem Ort, direkt aus Leipzig zu dir nach Hause."
+msgstr ""
+
+#: front-page.php:105
+msgid "Chakki-Mehl, regionale Masalas und frische Zutaten"
+msgstr ""
+
+#: front-page.php:106
+msgid "Klare Preise mit Grundpreis pro Kilo oder Liter"
+msgstr ""
+
+#: front-page.php:107
+msgid "Bestellungen und Rechnungen immer in deinem Konto"
+msgstr ""
+
+#: front-page.php:108
+msgid "Zahlung per Karte oder PayPal"
+msgstr ""
+
+#: front-page.php:110
+msgid "Zum Sortiment"
+msgstr ""
+
+#: front-page.php:116
+msgid "Das sagen unsere <em>Kunden</em>"
+msgstr ""
+
+#: front-page.php:117
+msgid "Platzhalter: vor dem Launch durch echte Kundenbewertungen ersetzen."
+msgstr ""
+
+#: front-page.php:122
+msgid "Hier steht später eine echte Bewertung einer Kundin oder eines Kunden."
+msgstr ""
+
+#: front-page.php:123
+#, php-format
+msgid "Kundenname %d"
+msgstr ""
+
+#: front-page.php:132
+msgid "Bereit für deinen <em>Einkauf?</em>"
+msgstr ""
+
+#: front-page.php:133
+msgid "Stöbere durch das Sortiment und lass dir alles nach Hause liefern."
+msgstr ""
+
+#: front-page.php:134
+msgid "Zu den Produkten"
+msgstr ""
+
+#: functions.php:22
+#: header.php:22
+msgid "Hauptmenü"
+msgstr ""
+
+#: functions.php:23
+msgid "Fußzeile"
+msgstr ""
+
+#: header.php:11
+msgid "Zum Inhalt springen"
+msgstr ""
+
+#: header.php:14
+msgid "Kostenloser Versand in ganz Deutschland ab 49 €"
+msgstr ""
+
+#: header.php:19
+msgid "Menü öffnen"
+msgstr ""
+
+#: header.php:24
+msgid "Start"
+msgstr ""
+
+#: header.php:26
+msgid "Sortiment"
+msgstr ""
+
+#: header.php:35
+msgid "Angebote"
+msgstr ""
+
+#: header.php:40
+#: header.php:41
+msgid "Produkte suchen"
+msgstr ""
+
+#: header.php:43
+msgid "Suchen"
+msgstr ""
+
+#: header.php:48
+#: header.php:62
+msgid "Konto"
+msgstr ""
+
+#: header.php:49
+msgid "Warenkorb"
+msgstr ""
+
+#: header.php:56
+msgid "Menü schließen"
+msgstr ""
+
+#: header.php:58
+msgid "Gesamtes Sortiment"
+msgstr ""
+
+#: inc/helpers.php:39
+msgid "Natha Foods Startseite"
+msgstr ""
+
+#: inc/helpers.php:49
+msgid "Sprache wählen"
+msgstr ""
+
+#: woocommerce/content-product.php:21
+msgid "Angebot"
+msgstr ""
+
+#: woocommerce/content-product.php:32
+#, php-format
+msgid "%s in den Warenkorb legen"
+msgstr ""
+
+#: woocommerce/content-product.php:42
+msgid "inkl. MwSt., zzgl."
+msgstr ""
+
+#: woocommerce/content-product.php:44
+#: woocommerce/content-product.php:46
+msgid "Versand"
+msgstr ""

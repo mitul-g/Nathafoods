@@ -1,0 +1,192 @@
+msgid ""
+msgstr ""
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Indische Lebensmittel aus Leipzig, temperaturgeschützt in ganz Deutschland geliefert."
+msgstr "Indian groceries from Leipzig, delivered temperature-protected across Germany."
+
+msgid "Einkaufen"
+msgstr "Shop"
+
+msgid "Rechtliches"
+msgstr "Legal"
+
+msgid "Kontakt"
+msgstr "Contact"
+
+msgid "Newsletter"
+msgstr "Newsletter"
+
+msgid "Angebote und Rezepte per E-Mail. Abmeldung jederzeit möglich."
+msgstr "Offers and recipes by email. Unsubscribe at any time."
+
+msgid "E-Mail-Adresse"
+msgstr "Email address"
+
+msgid "Anmelden"
+msgstr "Sign up"
+
+msgid "Zahlung per Stripe und PayPal"
+msgstr "Payment by Stripe and PayPal"
+
+msgid "Natha Foods Leipzig"
+msgstr "Natha Foods Leipzig"
+
+msgid "Authentische indische Lebensmittel, <em>schnell geliefert</em>"
+msgstr "Authentic Indian groceries, <em>delivered fast</em>"
+
+msgid "Frisch gemahlenes Chakki-Mehl, regionale Masalas und frische Zutaten, temperaturgeschützt in ganz Deutschland geliefert."
+msgstr "Chakki-fresh flours, regional masalas and fresh ingredients, delivered temperature-protected across Germany."
+
+msgid "Jetzt einkaufen"
+msgstr "Shop now"
+
+msgid "Unsere Leistungen"
+msgstr "Our service"
+
+msgid "Versand am selben Tag"
+msgstr "Same-day dispatch"
+
+msgid "bei Bestellung bis 12:00 Uhr"
+msgstr "for orders placed before 12:00"
+
+msgid "Temperaturgeschützt"
+msgstr "Temperature-protected"
+
+msgid "Versand frischer Ware aus Leipzig"
+msgstr "Fresh goods shipped from Leipzig"
+
+msgid "Sichere Zahlung"
+msgstr "Secure payment"
+
+msgid "mit Karte oder PayPal"
+msgstr "by card or PayPal"
+
+msgid "Beliebte <em>Kategorien</em>"
+msgstr "Popular <em>categories</em>"
+
+msgid "Zurück"
+msgstr "Previous"
+
+msgid "Weiter"
+msgstr "Next"
+
+msgid "Heute frisch <em>für dich</em>"
+msgstr "Fresh today <em>for you</em>"
+
+msgid "Alle ansehen"
+msgstr "See all"
+
+msgid "Nach Kategorie filtern"
+msgstr "Filter by category"
+
+msgid "Alle"
+msgstr "All"
+
+msgid "Frische <em>Angebote</em>"
+msgstr "Fresh <em>deals</em>"
+
+msgid "Warum bei <em>Natha Foods</em> einkaufen?"
+msgstr "Why shop at <em>Natha Foods</em>?"
+
+msgid "Alles für die indische Küche an einem Ort, direkt aus Leipzig zu dir nach Hause."
+msgstr "Everything for Indian cooking in one place, sent from Leipzig to your door."
+
+msgid "Chakki-Mehl, regionale Masalas und frische Zutaten"
+msgstr "Chakki flours, regional masalas and fresh ingredients"
+
+msgid "Klare Preise mit Grundpreis pro Kilo oder Liter"
+msgstr "Clear prices with the price per kilo or litre"
+
+msgid "Bestellungen und Rechnungen immer in deinem Konto"
+msgstr "Orders and invoices always in your account"
+
+msgid "Zahlung per Karte oder PayPal"
+msgstr "Pay by card or PayPal"
+
+msgid "Zum Sortiment"
+msgstr "Browse the range"
+
+msgid "Das sagen unsere <em>Kunden</em>"
+msgstr "What our <em>customers</em> say"
+
+msgid "Platzhalter: vor dem Launch durch echte Kundenbewertungen ersetzen."
+msgstr "Placeholder: replace with real customer reviews before launch."
+
+msgid "Hier steht später eine echte Bewertung einer Kundin oder eines Kunden."
+msgstr "A real customer review will go here."
+
+msgid "Kundenname %d"
+msgstr "Customer name %d"
+
+msgid "Bereit für deinen <em>Einkauf?</em>"
+msgstr "Ready to <em>shop?</em>"
+
+msgid "Stöbere durch das Sortiment und lass dir alles nach Hause liefern."
+msgstr "Browse the range and have everything delivered to your door."
+
+msgid "Zu den Produkten"
+msgstr "See the products"
+
+msgid "Hauptmenü"
+msgstr "Main menu"
+
+msgid "Fußzeile"
+msgstr "Footer"
+
+msgid "Zum Inhalt springen"
+msgstr "Skip to content"
+
+msgid "Kostenloser Versand in ganz Deutschland ab 49 €"
+msgstr "Free delivery across Germany from €49"
+
+msgid "Menü öffnen"
+msgstr "Open menu"
+
+msgid "Start"
+msgstr "Home"
+
+msgid "Sortiment"
+msgstr "Shop"
+
+msgid "Angebote"
+msgstr "Deals"
+
+msgid "Produkte suchen"
+msgstr "Search products"
+
+msgid "Suchen"
+msgstr "Search"
+
+msgid "Konto"
+msgstr "Account"
+
+msgid "Warenkorb"
+msgstr "Cart"
+
+msgid "Menü schließen"
+msgstr "Close menu"
+
+msgid "Gesamtes Sortiment"
+msgstr "All products"
+
+msgid "Natha Foods Startseite"
+msgstr "Natha Foods home"
+
+msgid "Sprache wählen"
+msgstr "Choose language"
+
+msgid "Angebot"
+msgstr "Offer"
+
+msgid "%s in den Warenkorb legen"
+msgstr "Add %s to cart"
+
+msgid "inkl. MwSt., zzgl."
+msgstr "incl. VAT, plus"
+
+msgid "Versand"
+msgstr "shipping"
