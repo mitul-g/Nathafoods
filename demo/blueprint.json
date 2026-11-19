@@ -66,6 +66,26 @@
 			"code": "<?php require '/wordpress/wp-load.php'; require '/wordpress/nf-seed.php';"
 		},
 		{
+			"step": "writeFile",
+			"path": "/wordpress/natha-products.csv",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/mitul-g/Nathafoods/main/demo/import/natha-products.csv"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/nf-import.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/mitul-g/Nathafoods/main/demo/import/import-products.php"
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php set_time_limit(0); require \"/wordpress/wp-load.php\"; require \"/wordpress/nf-import.php\";"
+		},
+		{
 			"step": "runPHP",
 			"code": "<?php require '/wordpress/wp-load.php'; wp_set_password( wp_generate_password( 40 ), 1 );"
 		},
